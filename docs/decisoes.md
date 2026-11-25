@@ -36,6 +36,8 @@
 
 - **Largura das colunas sem alinhamento fixo:** `tabelaFormatada` usa `" - "` para separar as colunas em vez de preenchimento por largura fixa, pois módulos de formatação como `Text.Printf` não fazem parte da lista de bibliotecas permitidas pelo enunciado.
 
+- **Bug de execução:** Ao imprimir a tabela, raramente uma linha é omitida devido a um erro no terminal, provavelmente devido ao tamanho da linha do cabeçalho, poderia ser corrigido com o módulo `Text.Printf`.
+
 - **Dados embutidos no código:** os jogos de teste ficam definidos como `String` em `src/Dados.hs` em vez de serem lidos de um arquivo externo em tempo de execução, mantendo a execução autocontida e compatível com o playground.
 
 - **Saída sem acentuação:** cabeçalhos, mensagens e nomes de times nos dados de exemplo foram mantidos sem acentos para garantir compatibilidade com terminais Windows que não utilizam UTF-8 por padrão.
